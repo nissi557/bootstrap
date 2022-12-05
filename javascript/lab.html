@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>form</title>
+    <script>
+        function validate(){
+            let uname = document.getElementById("textfield");
+            if(uname.value == "")
+            {
+                //alert("blank spaces are not allowed");
+                uname.style.border="1px solid red";
+                let label = document.getElementById("invalid message");
+                label.style.visibility="visible";
+                return false;
+            }
+
+            let pword = document.getElementById("password").value;
+            if(pword == ""){
+                alert("password cannot be blank");
+                return false;
+            }
+            let cb= document.getElementById("checkb").checked.value;
+            alert(cb);
+        }
+    </script>
+</head>
+<body>
+    <form action="success.html" onsubmit="return validate()">
+        <input type="text" id="textfield">
+        <label for="" id="invalid_message" style="color:red; visibility:hidden">invalid</label>
+        <br>
+        <input type="password" name="" id="password">
+        <br>
+        <input type="checkbox" id="checkb" value="abd">
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>

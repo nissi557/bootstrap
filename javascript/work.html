@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       function validate()
+       {
+        let uname=document.getElementById("username").value;
+        if(uname=="")
+        {
+            alert("blank spaces are not allowed");
+            return false;
+        }
+        
+        let uid=document.getElementById("userid").value;
+        if(uid=="")
+        {
+            alert("blank spaces are not allowed");
+            return false;
+        }
+       
+       let num=document.getElementById("number").value;
+       if(num=="")
+       {
+        alert("blank spaces are not allowed");
+        return false;
+       }
+      
+       let dt=document.getElementById("date").value
+       if(dt=="")
+       {
+        alert("blank spaces are not allowed");
+        return false;
+       }
+    }
+    </script>
+</head>
+<body bgcolor="red">
+    <form action="success.html" onsubmit="return validate()">
+    First Name &nbsp;&nbsp;&nbsp; <input type="text" id="username">
+    <br>
+    <br>
+    Last Name &nbsp;&nbsp;&nbsp;<input type="text" id="username">
+    <br>
+    <br>
+    Email ID &nbsp;&nbsp;&nbsp;<input type="text" id="userid">
+    <br>
+    <br>
+    Mobile Number&nbsp;&nbsp;&nbsp; <input type="text" id="number">
+    <br>
+    <br>
+   
+    Date of Birth(DOB)   &nbsp;&nbsp;&nbsp; <input type="date" name="" id="">
+    <br>
+    <br>
+    Address <input type="text"  id="address" width="2000px";height="50px";>
+    <br>
+    <br>
+    City &nbsp;&nbsp;&nbsp; <input type="text" id="username">
+    <br>
+    <br>
+    Pin Code &nbsp;&nbsp;&nbsp; <input type="text" id="number">
+    <br>
+    <br>
+     <input type="submit" value="submit">
+</form>
+</body>
+</html>

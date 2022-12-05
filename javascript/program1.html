@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <form onclick="function add()">
+        result<input type="text" id="t1"/><br>
+        <input type="button" onclick="add(5,8)" value="add"/><br>
+        <input type="reset" value="clear"/><br>
+
+    </form>
+</head>
+<body>
+    <script>
+        function add(a,b)
+        {
+            var c;
+            c=a+b;
+            document.getElementById("t1").value=c;
+            document.getElementById("t1").innerHTML=c;
+        }
+    </script>
+</body>
+</html>

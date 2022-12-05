@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <form onclick="function increment()">
+        result <input type="text" id="t1"><br>
+        <input type="button" onclick="increment(5)" value="increment"/><br>
+        <input type="reset" value="clear"/><br>
+    </form>
+</head>
+<body>
+    <script>
+        function increment(a)
+        {
+            var b;
+            b=a+1
+            document.getElementById("t1").value=b;
+            document.getElementById("t1").innerHTML=b;
+        }
+    </script>
+    
+</body>
+</html>

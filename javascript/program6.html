@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <form onclick="function years()">
+        years <input type="text" id="t1"/><br>
+        <input type="button" onclick="years(2)" value="result"/><br>
+        <input type="reset" value="clear"/><br>
+    </form>
+</head>
+<body>
+    <script>
+        function years(a)
+        {
+            var days;
+            days=365*a;
+            document.getElementById("t1").value=days;
+            document.getElementById("t1").innerHTML=days;
+        }
+    </script>
+</body>
+</html>

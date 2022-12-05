@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <form onclick="count()">
+    Number<input type="text" id="t2"/><br>
+    count<input type="text" id="t1"/><br>
+    <input type="button" onclick="count()" value="result"/><br>
+    </form>
+</head>
+<body>
+    <script>
+        function count()
+        {
+            var n,d,sum;
+            sum=0;
+            n=parseInt(document.getElementById("t2").value);
+            while(n>0)
+            {
+               d=n%10;
+               sum=sum+d;
+               n=n/10;
+            }
+            document.getElementById("t1").value=sum;
+            document.getElementById("t1").innerHTML=sum;
+        }
+    </script>
+</body>
+</html>
